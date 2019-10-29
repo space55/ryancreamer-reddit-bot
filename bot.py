@@ -16,7 +16,7 @@ for v in j["videos"]:
 
     if not db.get_video(video_id=v["video_id"]):
         obj = db.Video(url=v["url"], title=v["title"], video_id=v["video_id"], thumbnail=v["thumb"])
+        post(obj)
         obj.save()
 
-        post(obj)
     
