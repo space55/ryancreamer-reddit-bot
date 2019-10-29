@@ -1,6 +1,6 @@
 import praw
 
-reddit = praw.Reddit('ryancreamervideobot')
+reddit = praw.Reddit('ryancreamervideobot', user_agent="RyanCreamerVideoBot/0.1")
 
 subreddit = reddit.subreddit('ryancreamervideobot')
 
